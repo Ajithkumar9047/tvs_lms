@@ -1,12 +1,12 @@
 [
   {
-    "description": "      Lead is rejected when there is no possibility of contacting the user and getting the missing data. ",
+    "description": "for Lms",
     "elements": [
       {
         "description": "",
-        "id": "as-a-scheduler-i-want-to-check-the-success,-missing-data-and-rejected-leads;should-verify-the-lead-is-rejected-without-passing-the-mobile-number",
+        "id": "as-a-scheduler-i-want-to-check-all-the-leads,-so-that-i-can-process-the-success,-failure-and-rejected-leads;should-verify-the-lead-is-rejected-without-passing-the-mobile-number",
         "keyword": "Scenario",
-        "line": 3,
+        "line": 4,
         "name": "Should verify the lead is rejected without passing the mobile number",
         "steps": [
           {
@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 590699
+              "duration": 295300
             }
           },
           {
@@ -22,51 +22,51 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 480399
+              "duration": 675899
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 4,
+            "line": 5,
             "name": "Post the lead without Mobile number",
             "match": {
               "location": "features\\lead.js:55"
             },
             "result": {
               "status": "passed",
-              "duration": 1139999
+              "duration": 886399
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 5,
+            "line": 6,
             "name": "I receive a response",
             "match": {
               "location": "features\\lead.js:894"
             },
             "result": {
               "status": "passed",
-              "duration": 6293961799
+              "duration": 5680109600
             }
           },
           {
             "arguments": [
               {
                 "content": "{\n\"message\": \"'MOBIL E_ NUMBER' must not be empty.\"\n}",
-                "line": 7
+                "line": 8
               }
             ],
             "keyword": "Then ",
-            "line": 6,
+            "line": 7,
             "name": "I expect the response as",
             "match": {
               "location": "features\\lead.js:898"
             },
             "result": {
               "status": "passed",
-              "duration": 908999
+              "duration": 2000799
             }
           }
         ],
@@ -75,9 +75,9 @@
       },
       {
         "description": "",
-        "id": "as-a-scheduler-i-want-to-check-the-success,-missing-data-and-rejected-leads;should-verify-the-lead-is-inserted-successfully",
+        "id": "as-a-scheduler-i-want-to-check-all-the-leads,-so-that-i-can-process-the-success,-failure-and-rejected-leads;should-verify-the-lead-is-inserted-successfully",
         "keyword": "Scenario",
-        "line": 13,
+        "line": 14,
         "name": "Should verify the lead is inserted successfully",
         "steps": [
           {
@@ -85,7 +85,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 29400
+              "duration": 57500
             }
           },
           {
@@ -93,51 +93,51 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 54800
+              "duration": 77700
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 14,
+            "line": 15,
             "name": "Post the correct lead",
             "match": {
               "location": "features\\lead.js:107"
             },
             "result": {
               "status": "passed",
-              "duration": 193099
+              "duration": 364599
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 15,
+            "line": 16,
             "name": "I receive a response",
             "match": {
               "location": "features\\lead.js:894"
             },
             "result": {
               "status": "passed",
-              "duration": 2038645900
+              "duration": 2585225299
             }
           },
           {
             "arguments": [
               {
                 "content": "{\n\"message\":\"Success\"\n}",
-                "line": 17
+                "line": 18
               }
             ],
             "keyword": "Then ",
-            "line": 16,
+            "line": 17,
             "name": "I expect the response as",
             "match": {
               "location": "features\\lead.js:898"
             },
             "result": {
               "status": "passed",
-              "duration": 473799
+              "duration": 389699
             }
           }
         ],
@@ -146,9 +146,9 @@
       },
       {
         "description": "",
-        "id": "as-a-scheduler-i-want-to-check-the-success,-missing-data-and-rejected-leads;should-verify-the-lead-is-inserted-without-name",
+        "id": "as-a-scheduler-i-want-to-check-all-the-leads,-so-that-i-can-process-the-success,-failure-and-rejected-leads;should-verify-the-lead-is-inserted-without-name",
         "keyword": "Scenario",
-        "line": 22,
+        "line": 23,
         "name": "Should verify the lead is inserted without name",
         "steps": [
           {
@@ -156,7 +156,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 323699
+              "duration": 348400
             }
           },
           {
@@ -164,51 +164,51 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 112200
+              "duration": 114000
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 23,
+            "line": 24,
             "name": "Post the lead without name",
             "match": {
               "location": "features\\lead.js:161"
             },
             "result": {
               "status": "passed",
-              "duration": 450500
+              "duration": 491899
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 24,
+            "line": 25,
             "name": "I receive a response",
             "match": {
               "location": "features\\lead.js:894"
             },
             "result": {
               "status": "passed",
-              "duration": 988868700
+              "duration": 1288967799
             }
           },
           {
             "arguments": [
               {
                 "content": "{\n\"message\": \"'CUSTOME R_ NAME' must not be empty.\"\n}",
-                "line": 26
+                "line": 27
               }
             ],
             "keyword": "Then ",
-            "line": 25,
+            "line": 26,
             "name": "I expect the response as",
             "match": {
               "location": "features\\lead.js:898"
             },
             "result": {
               "status": "passed",
-              "duration": 536700
+              "duration": 284100
             }
           }
         ],
@@ -217,9 +217,9 @@
       },
       {
         "description": "",
-        "id": "as-a-scheduler-i-want-to-check-the-success,-missing-data-and-rejected-leads;should-verify-the-lead-is-inserted-with-name-less-than-3-characters",
+        "id": "as-a-scheduler-i-want-to-check-all-the-leads,-so-that-i-can-process-the-success,-failure-and-rejected-leads;should-verify-the-lead-is-inserted-with-name-less-than-3-characters",
         "keyword": "Scenario",
-        "line": 31,
+        "line": 32,
         "name": "Should verify the lead is inserted with name less than 3 characters",
         "steps": [
           {
@@ -227,7 +227,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 63500
+              "duration": 31100
             }
           },
           {
@@ -235,51 +235,51 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 183200
+              "duration": 76200
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 32,
+            "line": 33,
             "name": "Post the lead with name less than 3 characters",
             "match": {
               "location": "features\\lead.js:214"
             },
             "result": {
               "status": "passed",
-              "duration": 445300
+              "duration": 315700
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 33,
+            "line": 34,
             "name": "I receive a response",
             "match": {
               "location": "features\\lead.js:894"
             },
             "result": {
               "status": "passed",
-              "duration": 1243721400
+              "duration": 3349577800
             }
           },
           {
             "arguments": [
               {
                 "content": "{\n\"message\": \"lead name must not be less then three characters\"\n}",
-                "line": 35
+                "line": 36
               }
             ],
             "keyword": "Then ",
-            "line": 34,
+            "line": 35,
             "name": "I expect the response as",
             "match": {
               "location": "features\\lead.js:898"
             },
             "result": {
               "status": "failed",
-              "duration": 13616599,
+              "duration": 9013400,
               "error_message": "AssertionError [ERR_ASSERTION]: Json doesn't have value 'lead name must not be less then three characters' at '$.message' but found 'Success'\n    at Expect.fail (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\models\\expect.js:444:12)\n    at Expect._validateJsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\models\\expect.js:227:21)\n    at Expect.validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\models\\expect.js:54:10)\n    at Have._validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\exports\\expect.js:111:26)\n    at Have.jsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\exports\\expect.js:54:10)\n    at World.<anonymous> (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\features\\lead.js:900:29)"
             }
           }
@@ -289,9 +289,9 @@
       },
       {
         "description": "",
-        "id": "as-a-scheduler-i-want-to-check-the-success,-missing-data-and-rejected-leads;should-verify-the-lead-is-rejected-when-entering-a-invalid-mobile-number",
+        "id": "as-a-scheduler-i-want-to-check-all-the-leads,-so-that-i-can-process-the-success,-failure-and-rejected-leads;should-verify-the-lead-is-rejected-when-entering-a-invalid-mobile-number",
         "keyword": "Scenario",
-        "line": 40,
+        "line": 41,
         "name": "Should verify the lead is rejected when entering a invalid mobile number",
         "steps": [
           {
@@ -299,7 +299,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 36900
+              "duration": 31999
             }
           },
           {
@@ -307,51 +307,51 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 57600
+              "duration": 47100
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 41,
+            "line": 42,
             "name": "Post the lead with invalid Mobile number",
             "match": {
               "location": "features\\lead.js:266"
             },
             "result": {
               "status": "passed",
-              "duration": 507899
+              "duration": 566600
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 42,
+            "line": 43,
             "name": "I receive a response",
             "match": {
               "location": "features\\lead.js:894"
             },
             "result": {
               "status": "passed",
-              "duration": 1292094500
+              "duration": 2838822000
             }
           },
           {
             "arguments": [
               {
                 "content": "{\n\"message\": \"mobile number is invalid\"\n}",
-                "line": 44
+                "line": 45
               }
             ],
             "keyword": "Then ",
-            "line": 43,
+            "line": 44,
             "name": "I expect the response as",
             "match": {
               "location": "features\\lead.js:898"
             },
             "result": {
               "status": "failed",
-              "duration": 12271900,
+              "duration": 16700099,
               "error_message": "AssertionError [ERR_ASSERTION]: Json doesn't have value 'mobile number is invalid' at '$.message' but found 'Success'\n    at Expect.fail (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\models\\expect.js:444:12)\n    at Expect._validateJsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\models\\expect.js:227:21)\n    at Expect.validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\models\\expect.js:54:10)\n    at Have._validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\exports\\expect.js:111:26)\n    at Have.jsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\exports\\expect.js:54:10)\n    at World.<anonymous> (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\features\\lead.js:900:29)"
             }
           }
@@ -361,9 +361,9 @@
       },
       {
         "description": "",
-        "id": "as-a-scheduler-i-want-to-check-the-success,-missing-data-and-rejected-leads;should-verify-the-lead-is-inserted-without-brand-code",
+        "id": "as-a-scheduler-i-want-to-check-all-the-leads,-so-that-i-can-process-the-success,-failure-and-rejected-leads;should-verify-the-lead-is-inserted-without-brand-code",
         "keyword": "Scenario",
-        "line": 49,
+        "line": 50,
         "name": "Should verify the lead is inserted without brand code",
         "steps": [
           {
@@ -371,7 +371,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 424199
+              "duration": 398999
             }
           },
           {
@@ -379,51 +379,51 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 86800
+              "duration": 77600
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 50,
+            "line": 51,
             "name": "Post the lead without brand code",
             "match": {
               "location": "features\\lead.js:317"
             },
             "result": {
               "status": "passed",
-              "duration": 228900
+              "duration": 270900
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 51,
+            "line": 52,
             "name": "I receive a response",
             "match": {
               "location": "features\\lead.js:894"
             },
             "result": {
               "status": "passed",
-              "duration": 995139900
+              "duration": 690248899
             }
           },
           {
             "arguments": [
               {
                 "content": "{\n\"message\": \"'brand_code' must be greater than '0'.\"\n}",
-                "line": 53
+                "line": 54
               }
             ],
             "keyword": "Then ",
-            "line": 52,
+            "line": 53,
             "name": "I expect the response as",
             "match": {
               "location": "features\\lead.js:898"
             },
             "result": {
               "status": "passed",
-              "duration": 308799
+              "duration": 196700
             }
           }
         ],
@@ -432,9 +432,9 @@
       },
       {
         "description": "",
-        "id": "as-a-scheduler-i-want-to-check-the-success,-missing-data-and-rejected-leads;should-verify-the-lead-is-inserted-without-enquiry-date",
+        "id": "as-a-scheduler-i-want-to-check-all-the-leads,-so-that-i-can-process-the-success,-failure-and-rejected-leads;should-verify-the-lead-is-inserted-without-enquiry-date",
         "keyword": "Scenario",
-        "line": 58,
+        "line": 59,
         "name": "Should verify the lead is inserted without Enquiry date",
         "steps": [
           {
@@ -442,7 +442,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 46200
+              "duration": 32299
             }
           },
           {
@@ -450,51 +450,51 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 88099
+              "duration": 86300
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 59,
+            "line": 60,
             "name": "Post the lead without enquiry date",
             "match": {
               "location": "features\\lead.js:369"
             },
             "result": {
               "status": "passed",
-              "duration": 354699
+              "duration": 303999
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 60,
+            "line": 61,
             "name": "I receive a response",
             "match": {
               "location": "features\\lead.js:894"
             },
             "result": {
               "status": "passed",
-              "duration": 992976099
+              "duration": 518441400
             }
           },
           {
             "arguments": [
               {
                 "content": "{\n\"message\": \"'ENQUIR Y_ DATE' must not be empty.\"\n}",
-                "line": 62
+                "line": 63
               }
             ],
             "keyword": "Then ",
-            "line": 61,
+            "line": 62,
             "name": "I expect the response as",
             "match": {
               "location": "features\\lead.js:898"
             },
             "result": {
               "status": "passed",
-              "duration": 305799
+              "duration": 290700
             }
           }
         ],
@@ -503,9 +503,9 @@
       },
       {
         "description": "",
-        "id": "as-a-scheduler-i-want-to-check-the-success,-missing-data-and-rejected-leads;should-verify-the-lead-is-inserted-with-invalid-email-address",
+        "id": "as-a-scheduler-i-want-to-check-all-the-leads,-so-that-i-can-process-the-success,-failure-and-rejected-leads;should-verify-the-lead-is-inserted-with-invalid-email-address",
         "keyword": "Scenario",
-        "line": 67,
+        "line": 68,
         "name": "Should verify the lead is inserted with invalid Email address",
         "steps": [
           {
@@ -513,7 +513,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 40100
+              "duration": 27199
             }
           },
           {
@@ -521,51 +521,51 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 66200
+              "duration": 71099
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 68,
+            "line": 69,
             "name": "Post the lead with invalid email id",
             "match": {
               "location": "features\\lead.js:421"
             },
             "result": {
               "status": "passed",
-              "duration": 360899
+              "duration": 402200
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 69,
+            "line": 70,
             "name": "I receive a response",
             "match": {
               "location": "features\\lead.js:894"
             },
             "result": {
               "status": "passed",
-              "duration": 1286042000
+              "duration": 2930938800
             }
           },
           {
             "arguments": [
               {
                 "content": "{\n\"message\": \"email id is invalid\"\n}",
-                "line": 71
+                "line": 72
               }
             ],
             "keyword": "Then ",
-            "line": 70,
+            "line": 71,
             "name": "I expect the response as",
             "match": {
               "location": "features\\lead.js:898"
             },
             "result": {
               "status": "failed",
-              "duration": 17950800,
+              "duration": 22868900,
               "error_message": "AssertionError [ERR_ASSERTION]: Json doesn't have value 'email id is invalid' at '$.message' but found 'Success'\n    at Expect.fail (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\models\\expect.js:444:12)\n    at Expect._validateJsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\models\\expect.js:227:21)\n    at Expect.validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\models\\expect.js:54:10)\n    at Have._validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\exports\\expect.js:111:26)\n    at Have.jsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\exports\\expect.js:54:10)\n    at World.<anonymous> (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\features\\lead.js:900:29)"
             }
           }
@@ -575,9 +575,9 @@
       },
       {
         "description": "",
-        "id": "as-a-scheduler-i-want-to-check-the-success,-missing-data-and-rejected-leads;should-verify-the-lead-is-inserted-without-model-id",
+        "id": "as-a-scheduler-i-want-to-check-all-the-leads,-so-that-i-can-process-the-success,-failure-and-rejected-leads;should-verify-the-lead-is-inserted-without-model-id",
         "keyword": "Scenario",
-        "line": 76,
+        "line": 77,
         "name": "Should verify the lead is inserted without Model id",
         "steps": [
           {
@@ -585,7 +585,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 47799
+              "duration": 80100
             }
           },
           {
@@ -593,51 +593,51 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1504800
+              "duration": 1719199
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 77,
+            "line": 78,
             "name": "Post the lead without model id",
             "match": {
               "location": "features\\lead.js:472"
             },
             "result": {
               "status": "passed",
-              "duration": 343099
+              "duration": 649199
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 78,
+            "line": 79,
             "name": "I receive a response",
             "match": {
               "location": "features\\lead.js:894"
             },
             "result": {
               "status": "passed",
-              "duration": 1428605299
+              "duration": 2051643199
             }
           },
           {
             "arguments": [
               {
                 "content": "{\n\"message\": \"model id must not be empty\"\n}",
-                "line": 80
+                "line": 81
               }
             ],
             "keyword": "Then ",
-            "line": 79,
+            "line": 80,
             "name": "I expect the response as",
             "match": {
               "location": "features\\lead.js:898"
             },
             "result": {
               "status": "failed",
-              "duration": 11130700,
+              "duration": 14497900,
               "error_message": "AssertionError [ERR_ASSERTION]: Json doesn't have value 'model id must not be empty' at '$.message' but found 'Success'\n    at Expect.fail (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\models\\expect.js:444:12)\n    at Expect._validateJsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\models\\expect.js:227:21)\n    at Expect.validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\models\\expect.js:54:10)\n    at Have._validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\exports\\expect.js:111:26)\n    at Have.jsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\exports\\expect.js:54:10)\n    at World.<anonymous> (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\features\\lead.js:900:29)"
             }
           }
@@ -647,9 +647,9 @@
       },
       {
         "description": "",
-        "id": "as-a-scheduler-i-want-to-check-the-success,-missing-data-and-rejected-leads;should-verify-the-lead-is-inserted-without-part-id",
+        "id": "as-a-scheduler-i-want-to-check-all-the-leads,-so-that-i-can-process-the-success,-failure-and-rejected-leads;should-verify-the-lead-is-inserted-without-part-id",
         "keyword": "Scenario",
-        "line": 85,
+        "line": 86,
         "name": "Should verify the lead is inserted without Part id",
         "steps": [
           {
@@ -657,7 +657,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 31500
+              "duration": 28600
             }
           },
           {
@@ -665,51 +665,51 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 100000
+              "duration": 85900
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 86,
+            "line": 87,
             "name": "Post the lead without Part id",
             "match": {
               "location": "features\\lead.js:523"
             },
             "result": {
               "status": "passed",
-              "duration": 283399
+              "duration": 283299
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 87,
+            "line": 88,
             "name": "I receive a response",
             "match": {
               "location": "features\\lead.js:894"
             },
             "result": {
               "status": "passed",
-              "duration": 1369357500
+              "duration": 3221789200
             }
           },
           {
             "arguments": [
               {
                 "content": "{\n\"message\": \"part id must not be empty\"\n}",
-                "line": 89
+                "line": 90
               }
             ],
             "keyword": "Then ",
-            "line": 88,
+            "line": 89,
             "name": "I expect the response as",
             "match": {
               "location": "features\\lead.js:898"
             },
             "result": {
               "status": "failed",
-              "duration": 13306200,
+              "duration": 11506599,
               "error_message": "AssertionError [ERR_ASSERTION]: Json doesn't have value 'part id must not be empty' at '$.message' but found 'Success'\n    at Expect.fail (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\models\\expect.js:444:12)\n    at Expect._validateJsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\models\\expect.js:227:21)\n    at Expect.validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\models\\expect.js:54:10)\n    at Have._validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\exports\\expect.js:111:26)\n    at Have.jsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\exports\\expect.js:54:10)\n    at World.<anonymous> (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\features\\lead.js:900:29)"
             }
           }
@@ -719,9 +719,9 @@
       },
       {
         "description": "",
-        "id": "as-a-scheduler-i-want-to-check-the-success,-missing-data-and-rejected-leads;should-verify-the-lead-is-inserted-without-dealer-pincode",
+        "id": "as-a-scheduler-i-want-to-check-all-the-leads,-so-that-i-can-process-the-success,-failure-and-rejected-leads;should-verify-the-lead-is-inserted-without-dealer-pincode",
         "keyword": "Scenario",
-        "line": 94,
+        "line": 95,
         "name": "Should verify the lead is inserted without dealer pincode",
         "steps": [
           {
@@ -729,7 +729,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 20200
+              "duration": 27599
             }
           },
           {
@@ -737,51 +737,51 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 34700
+              "duration": 34500
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 95,
+            "line": 96,
             "name": "Post the lead without dealer pincode",
             "match": {
               "location": "features\\lead.js:574"
             },
             "result": {
               "status": "passed",
-              "duration": 308799
+              "duration": 209800
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 96,
+            "line": 97,
             "name": "I receive a response",
             "match": {
               "location": "features\\lead.js:894"
             },
             "result": {
               "status": "passed",
-              "duration": 1444441499
+              "duration": 3668698699
             }
           },
           {
             "arguments": [
               {
                 "content": "{\n\"message\": \"dealer pincode must not be empty\"\n}",
-                "line": 98
+                "line": 99
               }
             ],
             "keyword": "Then ",
-            "line": 97,
+            "line": 98,
             "name": "I expect the response as",
             "match": {
               "location": "features\\lead.js:898"
             },
             "result": {
               "status": "failed",
-              "duration": 28194600,
+              "duration": 14297399,
               "error_message": "AssertionError [ERR_ASSERTION]: Json doesn't have value 'dealer pincode must not be empty' at '$.message' but found 'Success'\n    at Expect.fail (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\models\\expect.js:444:12)\n    at Expect._validateJsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\models\\expect.js:227:21)\n    at Expect.validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\models\\expect.js:54:10)\n    at Have._validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\exports\\expect.js:111:26)\n    at Have.jsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\exports\\expect.js:54:10)\n    at World.<anonymous> (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\features\\lead.js:900:29)"
             }
           }
@@ -791,9 +791,9 @@
       },
       {
         "description": "",
-        "id": "as-a-scheduler-i-want-to-check-the-success,-missing-data-and-rejected-leads;should-verify-the-lead-is-inserted-without-customer-pincode",
+        "id": "as-a-scheduler-i-want-to-check-all-the-leads,-so-that-i-can-process-the-success,-failure-and-rejected-leads;should-verify-the-lead-is-inserted-without-customer-pincode",
         "keyword": "Scenario",
-        "line": 103,
+        "line": 104,
         "name": "Should verify the lead is inserted without customer pincode",
         "steps": [
           {
@@ -801,7 +801,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 80499
+              "duration": 31199
             }
           },
           {
@@ -809,51 +809,51 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 86899
+              "duration": 38300
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 104,
+            "line": 105,
             "name": "Post the lead without customer pincode",
             "match": {
               "location": "features\\lead.js:625"
             },
             "result": {
               "status": "passed",
-              "duration": 606999
+              "duration": 244300
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 105,
+            "line": 106,
             "name": "I receive a response",
             "match": {
               "location": "features\\lead.js:894"
             },
             "result": {
               "status": "passed",
-              "duration": 1483279200
+              "duration": 2308398500
             }
           },
           {
             "arguments": [
               {
                 "content": "{\n\"message\": \"customer pincode must not be empty\"\n}",
-                "line": 107
+                "line": 108
               }
             ],
             "keyword": "Then ",
-            "line": 106,
+            "line": 107,
             "name": "I expect the response as",
             "match": {
               "location": "features\\lead.js:898"
             },
             "result": {
               "status": "failed",
-              "duration": 14921300,
+              "duration": 21166000,
               "error_message": "AssertionError [ERR_ASSERTION]: Json doesn't have value 'customer pincode must not be empty' at '$.message' but found 'Success'\n    at Expect.fail (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\models\\expect.js:444:12)\n    at Expect._validateJsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\models\\expect.js:227:21)\n    at Expect.validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\models\\expect.js:54:10)\n    at Have._validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\exports\\expect.js:111:26)\n    at Have.jsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\exports\\expect.js:54:10)\n    at World.<anonymous> (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\features\\lead.js:900:29)"
             }
           }
@@ -863,9 +863,9 @@
       },
       {
         "description": "",
-        "id": "as-a-scheduler-i-want-to-check-the-success,-missing-data-and-rejected-leads;should-verify-the-lead-is-inserted-with-invalid-enquiry-data-format",
+        "id": "as-a-scheduler-i-want-to-check-all-the-leads,-so-that-i-can-process-the-success,-failure-and-rejected-leads;should-verify-the-lead-is-inserted-with-invalid-enquiry-data-format",
         "keyword": "Scenario",
-        "line": 112,
+        "line": 113,
         "name": "Should verify the lead is inserted with invalid enquiry data format",
         "steps": [
           {
@@ -873,7 +873,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 29399
+              "duration": 31599
             }
           },
           {
@@ -881,51 +881,51 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 41300
+              "duration": 49200
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 113,
+            "line": 114,
             "name": "Post the lead with invalid Enquiry date format",
             "match": {
               "location": "features\\lead.js:677"
             },
             "result": {
               "status": "passed",
-              "duration": 223399
+              "duration": 373700
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 114,
+            "line": 115,
             "name": "I receive a response",
             "match": {
               "location": "features\\lead.js:894"
             },
             "result": {
               "status": "passed",
-              "duration": 1247549900
+              "duration": 2620509600
             }
           },
           {
             "arguments": [
               {
                 "content": "{\n\"message\": \"enquiry date is invalid format\"\n}",
-                "line": 116
+                "line": 117
               }
             ],
             "keyword": "Then ",
-            "line": 115,
+            "line": 116,
             "name": "I expect the response as",
             "match": {
               "location": "features\\lead.js:898"
             },
             "result": {
               "status": "failed",
-              "duration": 27979200,
+              "duration": 22993199,
               "error_message": "AssertionError [ERR_ASSERTION]: Json doesn't have value 'enquiry date is invalid format' at '$.message' but found 'Success'\n    at Expect.fail (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\models\\expect.js:444:12)\n    at Expect._validateJsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\models\\expect.js:227:21)\n    at Expect.validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\models\\expect.js:54:10)\n    at Have._validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\exports\\expect.js:111:26)\n    at Have.jsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\exports\\expect.js:54:10)\n    at World.<anonymous> (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\features\\lead.js:900:29)"
             }
           }
@@ -935,9 +935,9 @@
       },
       {
         "description": "",
-        "id": "as-a-scheduler-i-want-to-check-the-success,-missing-data-and-rejected-leads;should-verify-the-lead-is-inserted-with-mismatched-part-and-model-id",
+        "id": "as-a-scheduler-i-want-to-check-all-the-leads,-so-that-i-can-process-the-success,-failure-and-rejected-leads;should-verify-the-lead-is-inserted-with-mismatched-part-and-model-id",
         "keyword": "Scenario",
-        "line": 121,
+        "line": 122,
         "name": "Should verify the lead is inserted with mismatched part and model id",
         "steps": [
           {
@@ -945,7 +945,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 28599
+              "duration": 34399
             }
           },
           {
@@ -953,51 +953,51 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 45099
+              "duration": 52999
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 122,
+            "line": 123,
             "name": "Post the lead with mismatched part and model id",
             "match": {
               "location": "features\\lead.js:729"
             },
             "result": {
               "status": "passed",
-              "duration": 296000
+              "duration": 336299
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 123,
+            "line": 124,
             "name": "I receive a response",
             "match": {
               "location": "features\\lead.js:894"
             },
             "result": {
               "status": "passed",
-              "duration": 1328057699
+              "duration": 3560515799
             }
           },
           {
             "arguments": [
               {
                 "content": "{\n\"message\": \"part and model id mismatched\"\n}",
-                "line": 125
+                "line": 126
               }
             ],
             "keyword": "Then ",
-            "line": 124,
+            "line": 125,
             "name": "I expect the response as",
             "match": {
               "location": "features\\lead.js:898"
             },
             "result": {
               "status": "failed",
-              "duration": 38938100,
+              "duration": 10372100,
               "error_message": "AssertionError [ERR_ASSERTION]: Json doesn't have value 'part and model id mismatched' at '$.message' but found 'Success'\n    at Expect.fail (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\models\\expect.js:444:12)\n    at Expect._validateJsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\models\\expect.js:227:21)\n    at Expect.validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\models\\expect.js:54:10)\n    at Have._validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\exports\\expect.js:111:26)\n    at Have.jsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\exports\\expect.js:54:10)\n    at World.<anonymous> (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\features\\lead.js:900:29)"
             }
           }
@@ -1007,9 +1007,9 @@
       },
       {
         "description": "",
-        "id": "as-a-scheduler-i-want-to-check-the-success,-missing-data-and-rejected-leads;should-verify-the-lead-is-inserted-without-enquiry-source",
+        "id": "as-a-scheduler-i-want-to-check-all-the-leads,-so-that-i-can-process-the-success,-failure-and-rejected-leads;should-verify-the-lead-is-inserted-without-enquiry-source",
         "keyword": "Scenario",
-        "line": 130,
+        "line": 131,
         "name": "Should verify the lead is inserted without enquiry source",
         "steps": [
           {
@@ -1017,7 +1017,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 54700
+              "duration": 24099
             }
           },
           {
@@ -1025,51 +1025,51 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 90399
+              "duration": 80700
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 131,
+            "line": 132,
             "name": "Post the lead without enquiry source",
             "match": {
               "location": "features\\lead.js:781"
             },
             "result": {
               "status": "passed",
-              "duration": 537400
+              "duration": 200600
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 132,
+            "line": 133,
             "name": "I receive a response",
             "match": {
               "location": "features\\lead.js:894"
             },
             "result": {
               "status": "passed",
-              "duration": 1341904900
+              "duration": 2649480799
             }
           },
           {
             "arguments": [
               {
                 "content": "{\n\"message\": \"enquiry source must not be empty\"\n}",
-                "line": 134
+                "line": 135
               }
             ],
             "keyword": "Then ",
-            "line": 133,
+            "line": 134,
             "name": "I expect the response as",
             "match": {
               "location": "features\\lead.js:898"
             },
             "result": {
               "status": "failed",
-              "duration": 28853899,
+              "duration": 24290899,
               "error_message": "AssertionError [ERR_ASSERTION]: Json doesn't have value 'enquiry source must not be empty' at '$.message' but found 'Success'\n    at Expect.fail (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\models\\expect.js:444:12)\n    at Expect._validateJsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\models\\expect.js:227:21)\n    at Expect.validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\models\\expect.js:54:10)\n    at Have._validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\exports\\expect.js:111:26)\n    at Have.jsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\exports\\expect.js:54:10)\n    at World.<anonymous> (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\features\\lead.js:900:29)"
             }
           }
@@ -1079,9 +1079,9 @@
       },
       {
         "description": "",
-        "id": "as-a-scheduler-i-want-to-check-the-success,-missing-data-and-rejected-leads;should-verify-the-lead-is-inserted-with-invalid-dealer-id",
+        "id": "as-a-scheduler-i-want-to-check-all-the-leads,-so-that-i-can-process-the-success,-failure-and-rejected-leads;should-verify-the-lead-is-inserted-with-invalid-dealer-id",
         "keyword": "Scenario",
-        "line": 139,
+        "line": 140,
         "name": "Should verify the lead is inserted with invalid dealer id",
         "steps": [
           {
@@ -1089,7 +1089,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 64599
+              "duration": 67199
             }
           },
           {
@@ -1097,51 +1097,51 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 90700
+              "duration": 64800
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 140,
+            "line": 141,
             "name": "Post the lead with invalid dealer id",
             "match": {
               "location": "features\\lead.js:834"
             },
             "result": {
               "status": "passed",
-              "duration": 436800
+              "duration": 457900
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 141,
+            "line": 142,
             "name": "I receive a response",
             "match": {
               "location": "features\\lead.js:894"
             },
             "result": {
               "status": "passed",
-              "duration": 1486026999
+              "duration": 3348435899
             }
           },
           {
             "arguments": [
               {
                 "content": "{\n\"message\": \"dealer id is invalid\"\n}",
-                "line": 143
+                "line": 144
               }
             ],
             "keyword": "Then ",
-            "line": 142,
+            "line": 143,
             "name": "I expect the response as",
             "match": {
               "location": "features\\lead.js:898"
             },
             "result": {
               "status": "failed",
-              "duration": 33883900,
+              "duration": 28126899,
               "error_message": "AssertionError [ERR_ASSERTION]: Json doesn't have value 'dealer id is invalid' at '$.message' but found 'Success'\n    at Expect.fail (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\models\\expect.js:444:12)\n    at Expect._validateJsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\models\\expect.js:227:21)\n    at Expect.validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\models\\expect.js:54:10)\n    at Have._validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\exports\\expect.js:111:26)\n    at Have.jsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\exports\\expect.js:54:10)\n    at World.<anonymous> (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\features\\lead.js:900:29)"
             }
           }
@@ -1151,9 +1151,9 @@
       },
       {
         "description": "",
-        "id": "as-a-scheduler-i-want-to-check-the-success,-missing-data-and-rejected-leads;should-verify-the-lead-is-inserted-with-invalid-brand-id",
+        "id": "as-a-scheduler-i-want-to-check-all-the-leads,-so-that-i-can-process-the-success,-failure-and-rejected-leads;should-verify-the-lead-is-inserted-with-invalid-brand-id",
         "keyword": "Scenario",
-        "line": 148,
+        "line": 149,
         "name": "Should verify the lead is inserted with invalid Brand id",
         "steps": [
           {
@@ -1161,7 +1161,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 93300
+              "duration": 53499
             }
           },
           {
@@ -1169,51 +1169,51 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 91399
+              "duration": 60799
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 149,
+            "line": 150,
             "name": "Post the lead with invalid brand id",
             "match": {
               "location": "features\\lead.js:887"
             },
             "result": {
               "status": "passed",
-              "duration": 519499
+              "duration": 347599
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 150,
+            "line": 151,
             "name": "I receive a response",
             "match": {
               "location": "features\\lead.js:894"
             },
             "result": {
               "status": "passed",
-              "duration": 2209780799
+              "duration": 1546760499
             }
           },
           {
             "arguments": [
               {
                 "content": "{\n\"message\": \"brand id is invalid\"\n}",
-                "line": 152
+                "line": 153
               }
             ],
             "keyword": "Then ",
-            "line": 151,
+            "line": 152,
             "name": "I expect the response as",
             "match": {
               "location": "features\\lead.js:898"
             },
             "result": {
               "status": "failed",
-              "duration": 22776599,
+              "duration": 20571399,
               "error_message": "AssertionError [ERR_ASSERTION]: Json doesn't have type 'object' at '$' but found 'string'\n    at Expect.fail (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\models\\expect.js:444:12)\n    at Expect._validateJsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\models\\expect.js:227:21)\n    at Expect.validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\models\\expect.js:54:10)\n    at Have._validate (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\exports\\expect.js:111:26)\n    at Have.jsonLike (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\node_modules\\pactum\\src\\exports\\expect.js:54:10)\n    at World.<anonymous> (C:\\Users\\User.EPAGE-LD22-142\\Documents\\GitHub\\tvslms\\tvs_lms\\features\\lead.js:900:29)"
             }
           }
@@ -1222,10 +1222,10 @@
         "type": "scenario"
       }
     ],
-    "id": "as-a-scheduler-i-want-to-check-the-success,-missing-data-and-rejected-leads",
+    "id": "as-a-scheduler-i-want-to-check-all-the-leads,-so-that-i-can-process-the-success,-failure-and-rejected-leads",
     "line": 1,
     "keyword": "Feature",
-    "name": "As a scheduler I want to check the Success, Missing data and Rejected leads",
+    "name": "As a scheduler I want to check all the leads, so that I can process the success, Failure and Rejected leads",
     "tags": [],
     "uri": "features\\is_lead_inserted.feature"
   }
