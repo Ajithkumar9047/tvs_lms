@@ -674,7 +674,7 @@ pactum.stash.addDataTemplate(
         }
 
 )
-Given('Post the lead with invalid Enqid format', async function () {
+Given('Post the lead with invalid Enquiry date format', async function () {
     spec["POST".toLowerCase()]("/lead");
     spec.withJson({ '@DATA:TEMPLATE@': "EnqdateFormate" });    
 });   
@@ -782,6 +782,114 @@ Given('Post the lead without enquiry source', async function () {
     spec["POST".toLowerCase()]("/lead");
     spec.withJson({ '@DATA:TEMPLATE@': "Sourcemissing" });    
 });   
+
+
+pactum.stash.addDataTemplate(
+    {
+        invalid_dealer_id: 
+        {
+            "CUSTOMER_NAME": "Punitha test",
+            "DEALER_ID": "9",
+            "MOBILE_NUMBER": "9047981343",
+            "EMAIL_ID": "prasanth@gmail.com",
+            "ENQUIRY_DATE": "2020-10-09 12:22:15.000",
+            "city": "Gurugram",
+            "username": "tvscommon",
+            "password": "motor!@$",
+            "utm_source": "testsouce",
+            "utm_medium": "testmedium",
+            "utm_campaign": "testcampaingn",
+            "gclid": "testgcid",
+            "language_code": "1",
+            "SOURCE": "dmsapi",
+            "AREA": "177208",
+            "brand_code": 8,
+            "MODEL_ID": "000040000100000134",
+            "PART_ID": "K6191490HH",
+            "CUSTOMER_VOICE": "null",
+            "BRANCH_ID": "1",
+            "ADDRESS_LINE1": "null",
+            "utm_term": "termtest",
+            "utm_content": "contenttest",
+            "parm1": "paramtest1",
+            "parm2": "",
+            "parm3": "paramtest3",
+            "parm4": "paramtest4",
+            "parm5": "paramtest5",
+            "CUSTOMER_STATE": "Haryana",
+            "Finance": "1",
+            "pincode": "607303",
+            "Finance_Company": "tvs Credit",
+            "IntentforPurchase": "Within 7 days ",
+            "Device": "Redmi",
+            "transactionId": "2c58137c7afc4ed0abec3b0049f63f34",
+            "Category": "website",
+            "Payment_type": "full",
+            "Booking_amount": 99999999,
+            "payment_status": "initialized"
+        }
+        }
+)
+
+Given('Post the lead with invalid dealer id', async function () {
+    spec["POST".toLowerCase()]("/lead");
+    spec.withJson({ '@DATA:TEMPLATE@': "invalid_dealer_id" });
+    
+    });
+
+    pactum.stash.addDataTemplate(
+        {
+            invalid_brand_id:
+            {
+                "CUSTOMER_NAME": "Ajithkumar",
+                "DEALER_ID": "12169",
+                "MOBILE_NUMBER": "9047981343",
+                "EMAIL_ID": "prasanth@gmail.com",
+                "ENQUIRY_DATE": "2020-10-09 12:22:15.000",
+                "city": "Gurugram",
+                "username": "tvscommon",
+                "password": "motor!@$",
+                "utm_source": "testsouce",
+                "utm_medium": "testmedium",
+                "utm_campaign": "testcampaingn",
+                "gclid": "testgcid",
+                "language_code": "1",
+                "SOURCE": "dmsapi",
+                "AREA": "177208",
+                "brand_code": 8,
+                "MODEL_ID": "000040000100000134",
+                "PART_ID": "K6191490HH",
+                "CUSTOMER_VOICE": "null",
+                "BRANCH_ID": "0001",
+                "ADDRESS_LINE1": "null",
+                "utm_term": "termtest",
+                "utm_content": "contenttest",
+                "parm1": "paramtest1",
+                "parm2": "",
+                "parm3": "paramtest3",
+                "parm4": "paramtest4",
+                "parm5": "paramtest5",
+                "CUSTOMER_STATE": "Haryana",
+                "Finance": "1",
+                "pincode": "607303",
+                "Finance_Company": "tvs Credit",
+                "IntentforPurchase": "Within 7 days ",
+                "Device": "Redmi",
+                "transactionId": "2c58137c7afc4ed0abec3b0049f63f34",
+                "Category": "website",
+                "Payment_type": "full",
+                "Booking_amount": 99999999,
+                "payment_status": "initialized"
+            }
+            }
+
+)
+Given('Post the lead with invalid brand id', async function () {
+        spec["POST".toLowerCase()]("/lead");
+        spec.withJson({ '@DATA:TEMPLATE@': "brand_id" });
+        
+    });   
+
 
 When('I receive a response', async function () {
     await spec.toss();

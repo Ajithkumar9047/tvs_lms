@@ -34,7 +34,7 @@ Feature:As a scheduler I want to check the Success, Missing data and Rejected le
                   Then I expect the response as
                   """
                   {
-                  "message": "Success"
+                  "message": "lead name must not be less then three characters"
                   }
                   """
       Scenario: Should verify the lead is rejected when entering a invalid mobile number
@@ -43,7 +43,7 @@ Feature:As a scheduler I want to check the Success, Missing data and Rejected le
                   Then I expect the response as
                   """
                   {
-                  "message": "Success"
+                  "message": "mobile number is invalid"
                   }
                   """
       Scenario: Should verify the lead is inserted without brand code
@@ -70,7 +70,7 @@ Feature:As a scheduler I want to check the Success, Missing data and Rejected le
                   Then I expect the response as
                   """
                   {
-                  "message": "Success"
+                  "message": "email id is invalid"
                   }
                   """
       Scenario: Should verify the lead is inserted without Model id
@@ -79,7 +79,7 @@ Feature:As a scheduler I want to check the Success, Missing data and Rejected le
                   Then I expect the response as
                   """
                   {
-                  "message": "Success"
+                  "message": "model id must not be empty"
                   }
                   """
       Scenario: Should verify the lead is inserted without Part id
@@ -88,7 +88,7 @@ Feature:As a scheduler I want to check the Success, Missing data and Rejected le
                   Then I expect the response as
                   """
                   {
-                  "message": "Success"
+                  "message": "part id must not be empty"
                   }
                   """
       Scenario:Should verify the lead is inserted without dealer pincode
@@ -97,7 +97,7 @@ Feature:As a scheduler I want to check the Success, Missing data and Rejected le
                   Then I expect the response as
                   """
                   {
-                  "message": "Success"
+                  "message": "dealer pincode must not be empty"
                   }
                   """
       Scenario: Should verify the lead is inserted without customer pincode
@@ -106,16 +106,16 @@ Feature:As a scheduler I want to check the Success, Missing data and Rejected le
                   Then I expect the response as
                   """
                   {
-                  "message": "Success"
+                  "message": "customer pincode must not be empty"
                   }
                   """
-      Scenario: Should verify the lead is inserted with invalid Enqid format
-            Given Post the lead with invalid Enqid format
+      Scenario: Should verify the lead is inserted with invalid enquiry data format
+            Given Post the lead with invalid Enquiry date format
             When I receive a response 
                   Then I expect the response as
                   """
                   {
-                  "message": "Success"
+                  "message": "enquiry date is invalid format"
                   }
                   """
       Scenario: Should verify the lead is inserted with mismatched part and model id
@@ -124,7 +124,7 @@ Feature:As a scheduler I want to check the Success, Missing data and Rejected le
                   Then I expect the response as
                   """
                   {
-                  "message": "Success"
+                  "message": "part and model id mismatched"
                   }
                   """
       Scenario: Should verify the lead is inserted without enquiry source
@@ -133,9 +133,28 @@ Feature:As a scheduler I want to check the Success, Missing data and Rejected le
                   Then I expect the response as
                   """
                   {
-                  "message": "Success"
+                  "message": "enquiry source must not be empty"
                   }
                   """
+      Scenario: Should verify the lead is inserted with invalid dealer id
+            Given Post the lead with invalid dealer id
+            When I receive a response 
+                  Then I expect the response as
+                  """
+                  {
+                  "message": "dealer id is invalid"
+                  }
+                  """
+      Scenario: Should verify the lead is inserted with invalid Brand id
+            Given Post the lead with invalid brand id
+            When I receive a response 
+                  Then I expect the response as
+                  """
+                  {
+                  "message": "brand id is invalid"
+                  }
+                  """
+      
 
 
 
