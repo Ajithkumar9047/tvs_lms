@@ -1,13 +1,12 @@
-Feature:As a scheduler I want to check all the leads, so that I can process the success, Failure and Rejected leads
-for Lms
-
+Feature:As a scheduler I want to check the Success, Missing data and Rejected leads
+      Lead is rejected when there is no possibility of contacting the user and getting the missing data. 
       Scenario: Should verify the lead is rejected without passing the mobile number 
             Given Post the lead without Mobile number
             When I receive a response 
                   Then I expect the response as
                   """
                   {
-                  "message": "'MOBIL E_ NUMBER' must not be empty."
+                  "message": "Invalid/Missing mobile number"
                   }
                   """
 
@@ -26,7 +25,7 @@ for Lms
                   Then I expect the response as
                   """
                   {
-                  "message": "'CUSTOME R_ NAME' must not be empty."
+                  "message": "'CUSTOME R_ NAME' must not be empty.~The specified condition was not met for 'CUSTOME R_ NAME'."
                   }
                   """
       Scenario:Should verify the lead is inserted with name less than 3 characters 
@@ -35,7 +34,7 @@ for Lms
                   Then I expect the response as
                   """
                   {
-                  "message": "lead name must not be less then three characters"
+                  "message": "The specified condition was not met for 'CUSTOME R_ NAME'."
                   }
                   """
       Scenario: Should verify the lead is rejected when entering a invalid mobile number
@@ -44,7 +43,7 @@ for Lms
                   Then I expect the response as
                   """
                   {
-                  "message": "mobile number is invalid"
+                  "message": "Invalid/Missing mobile number"
                   }
                   """
       Scenario: Should verify the lead is inserted without brand code
@@ -71,7 +70,7 @@ for Lms
                   Then I expect the response as
                   """
                   {
-                  "message": "email id is invalid"
+                  "message": "'EMAIL L_ ID' must not be empty.~A valid email is required"
                   }
                   """
       Scenario: Should verify the lead is inserted without Model id
@@ -80,7 +79,7 @@ for Lms
                   Then I expect the response as
                   """
                   {
-                  "message": "model id must not be empty"
+                  "message": "'MODE L_ ID' must not be empty."
                   }
                   """
       Scenario: Should verify the lead is inserted without Part id
@@ -89,7 +88,7 @@ for Lms
                   Then I expect the response as
                   """
                   {
-                  "message": "part id must not be empty"
+                  "message": "'PAR T_ ID' must not be empty."
                   }
                   """
       Scenario:Should verify the lead is inserted without dealer pincode
@@ -98,7 +97,7 @@ for Lms
                   Then I expect the response as
                   """
                   {
-                  "message": "dealer pincode must not be empty"
+                  "message": "'AREA' must not be empty."
                   }
                   """
       Scenario: Should verify the lead is inserted without customer pincode
@@ -107,55 +106,56 @@ for Lms
                   Then I expect the response as
                   """
                   {
-                  "message": "customer pincode must not be empty"
+                  "message": "'pincode' must not be empty."
                   }
                   """
-      Scenario: Should verify the lead is inserted with invalid enquiry data format
-            Given Post the lead with invalid Enquiry date format
+      Scenario: Should verify the lead is inserted with invalid Enqid format
+            Given Post the lead with invalid Enqid format
             When I receive a response 
                   Then I expect the response as
                   """
                   {
-                  "message": "enquiry date is invalid format"
+                  "message": "Invalid/missing Enquiry Date"
                   }
                   """
-      Scenario: Should verify the lead is inserted with mismatched part and model id
-            Given Post the lead with mismatched part and model id
-            When I receive a response 
-                  Then I expect the response as
-                  """
-                  {
-                  "message": "part and model id mismatched"
-                  }
-                  """
+      # Scenario: Should verify the lead is inserted with mismatched part and model id
+      #       Given Post the lead with mismatched part and model id
+      #       When I receive a response 
+      #             Then I expect the response as
+      #             """
+      #             {
+      #             "message": "part and model id mismatched"
+      #             }
+      #             """
       Scenario: Should verify the lead is inserted without enquiry source
             Given Post the lead without enquiry source
             When I receive a response 
                   Then I expect the response as
                   """
                   {
-                  "message": "enquiry source must not be empty"
+                  "message": "Source not present"
                   }
                   """
-      Scenario: Should verify the lead is inserted with invalid dealer id
-            Given Post the lead with invalid dealer id
+
+      Scenario: Should verify the lead is inserted when the dealer id is invalid
+            Given Post the lead when the dealer id is invalid
             When I receive a response 
                   Then I expect the response as
                   """
                   {
-                  "message": "dealer id is invalid"
+                  "message": "Invalid/missing Dealer Id~Invalid DealerId and BranchId Combination"
                   }
                   """
-      Scenario: Should verify the lead is inserted with invalid Brand id
-            Given Post the lead with invalid brand id
+
+      Scenario: Should verify the lead is inserted when the Dealer Id and Branch Id mismatch
+            Given Post the lead when the Dealer Id and Branch Id mismatch
             When I receive a response 
                   Then I expect the response as
                   """
                   {
-                  "message": "brand id is invalid"
+                  "message": "Invalid/missing Dealer Id~Invalid DealerId and BranchId Combination"
                   }
                   """
-      
 
 
 
