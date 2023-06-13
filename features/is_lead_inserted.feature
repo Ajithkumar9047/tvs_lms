@@ -61,7 +61,7 @@ Feature:As a scheduler I want to check the Success, Missing data and Rejected le
                   Then I expect the response as
                   """
                   {
-                  "message": "'ENQUIR Y_ DATE' must not be empty."
+                  "message": "'ENQUIR Y_ DATE' must not be empty.~Invalid/missing Enquiry Date"
                   }
                   """
       Scenario:Should verify the lead is inserted with invalid Email address
@@ -70,7 +70,7 @@ Feature:As a scheduler I want to check the Success, Missing data and Rejected le
                   Then I expect the response as
                   """
                   {
-                  "message": "'EMAIL L_ ID' must not be empty.~A valid email is required"
+                  "message": "A valid email is required"
                   }
                   """
       Scenario: Should verify the lead is inserted without Model id
@@ -97,7 +97,7 @@ Feature:As a scheduler I want to check the Success, Missing data and Rejected le
                   Then I expect the response as
                   """
                   {
-                  "message": "'AREA' must not be empty."
+                  "message": "'AREA' must not be empty.~The specified condition was not met for 'AREA'."
                   }
                   """
       Scenario: Should verify the lead is inserted without customer pincode
@@ -106,11 +106,11 @@ Feature:As a scheduler I want to check the Success, Missing data and Rejected le
                   Then I expect the response as
                   """
                   {
-                  "message": "'pincode' must not be empty."
+                  "message": "'pincode' must not be empty.~The specified condition was not met for 'pincode'."
                   }
                   """
-      Scenario: Should verify the lead is inserted with invalid Enqid format
-            Given Post the lead with invalid Enqid format
+      Scenario: Should verify the lead is inserted with invalid Enquiry format
+            Given Post the lead with invalid Enquiry id format
             When I receive a response 
                   Then I expect the response as
                   """
@@ -156,7 +156,6 @@ Feature:As a scheduler I want to check the Success, Missing data and Rejected le
                   "message": "Invalid/missing Dealer Id~Invalid DealerId and BranchId Combination"
                   }
                   """
-
 
 
 
