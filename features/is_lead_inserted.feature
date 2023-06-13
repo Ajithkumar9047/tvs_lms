@@ -1,4 +1,4 @@
-Feature:As a scheduler I want to check the Success, Missing data and Rejected leads
+Feature:As a scheduler I want to check the Success, Missing data and Rejected leads. test
       Lead is rejected when there is no possibility of contacting the user and getting the missing data. 
       Scenario: Should verify the lead is rejected without passing the mobile number 
             Given Post the lead without Mobile number
