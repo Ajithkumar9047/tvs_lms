@@ -378,7 +378,7 @@ pactum.stash.addDataTemplate(
             "CUSTOMER_NAME": "Ajithkumar",
             "DEALER_ID": "12169",
             "MOBILE_NUMBER": "9047981343",
-            "EMAIL_ID": "prasanth@.com",
+            "EMAIL_ID": "gmail.com",
             "ENQUIRY_DATE": "2020-10-09 12:22:15.000",
             "city": "Gurugram",
             "username": "tvscommon",
@@ -674,7 +674,7 @@ pactum.stash.addDataTemplate(
         }
 
 )
-Given('Post the lead with invalid Enqid format', async function () {
+Given('Post the lead with invalid Enquiry id format', async function () {
     spec["POST".toLowerCase()]("/lead");
     spec.withJson({ '@DATA:TEMPLATE@': "EnqdateFormate" });    
 });   
@@ -834,7 +834,7 @@ pactum.stash.addDataTemplate(
 )
 Given('Post the lead when the dealer id is invalid', async function () {
     spec["POST".toLowerCase()]("/lead");
-    spec.withJson({ '@DATA:TEMPLATE@': " DEALER_ID_invalid" });    
+    spec.withJson({ '@DATA:TEMPLATE@': "DEALER_ID_invalid" });    
 });
 
 
